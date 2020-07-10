@@ -1,8 +1,8 @@
 ---
 # defaults file for na-ontap-vserver-create
 netapp_hostname: "{{ inventory_hostname }}"
-netapp_username: "{{ inventory_hostname.na_user }}"
-netapp_password: "{{ inventory_hostname.netapp_password }}"
+netapp_username: "{{ hostvars[inventory_hostname] }}"
+netapp_password: "{{ inventory_hostname.netapp_pas }}"
 validate_certs: false
 vservers:
 vserver_dns:
