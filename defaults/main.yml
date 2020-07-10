@@ -1,8 +1,8 @@
 ---
 # defaults file for na-ontap-vserver-create
-netapp_hostname:
-netapp_username:
-netapp_password:
+netapp_hostname: "{{ hostvars['jam'].hostname_fqdn }}"
+netapp_username: "{{ hostvars['jam'].netapp_username }}"
+netapp_password: "{{ hostvars['jam'].netapp_password }}"
 validate_certs: false
 vservers:
 vserver_dns:
