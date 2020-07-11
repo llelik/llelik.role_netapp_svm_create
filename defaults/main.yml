@@ -1,6 +1,6 @@
 ---
 # defaults file for na-ontap-vserver-create
-netapp_hostname: jamaica.muccbc.hq.netapp.com #"{{ inventory_hostname }}"
+netapp_hostname: "{{ netapp_hostname }}"
 netapp_username: "{{ netapp_user }}"
 netapp_password: "{{ netapp_pass }}"
 validate_certs: false
